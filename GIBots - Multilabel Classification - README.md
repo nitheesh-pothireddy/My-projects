@@ -14,9 +14,11 @@ Instructions:
 2. Navigate to the `code` directory.
 3. Run the `multilabel_classification.py` script to execute the code.
 4. Ensure that the required Python libraries are installed (e.g., pandas, numpy, scikit-learn).
-5. Review the output predictions generated in the `output` directory.
-6. Modify the code as needed for your specific use case.
+5. Review the output predictions generated in the output images below.
 
-Additional Notes:
-- The code is written in Python 3 and utilizes popular machine learning libraries such as scikit-learn and pandas.
-- For any questions or issues, please create a new GitHub issue in the repository.
+![image](https://github.com/nitheesh-pothireddy/My-projects/assets/58605710/4ae0434c-ebf0-41f3-ac04-ae29daa4c84a)
+![image](https://github.com/nitheesh-pothireddy/My-projects/assets/58605710/9d165a1a-1b46-4306-991f-241f98916701)
+
+
+Done By
+Nitheesh Pothireddy
