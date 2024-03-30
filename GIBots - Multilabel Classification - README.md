@@ -16,8 +16,10 @@ Instructions:
 4. Ensure that the required Python libraries are installed (e.g., pandas, numpy, scikit-learn).
 5. Review the output predictions generated in the output images below.
 
-![image](https://github.com/nitheesh-pothireddy/My-projects/assets/58605710/4ae0434c-ebf0-41f3-ac04-ae29daa4c84a)
-![image](https://github.com/nitheesh-pothireddy/My-projects/assets/58605710/9d165a1a-1b46-4306-991f-241f98916701)
+<img width="1470" alt="Screenshot 2024-03-30 at 11 46 18 PM" src="https://github.com/nitheesh-pothireddy/My-projects/assets/58605710/ea0e8418-234d-495f-9b7b-554f83b4a7b1">
+<img width="1088" alt="Screenshot 2024-03-30 at 11 47 28 PM" src="https://github.com/nitheesh-pothireddy/My-projects/assets/58605710/441a04aa-3311-407a-bfb8-d15e4e54101f">
+
+
 
 
 Done By
