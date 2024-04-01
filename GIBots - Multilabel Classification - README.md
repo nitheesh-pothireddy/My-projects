@@ -10,7 +10,7 @@ Folder Structure:
 - README.md: Provides an overview of the repository and instructions for running the code.
 
 Instructions:
-1. Open the notebook 'GIBots - Multilabel Classification.ipnyb'
+1. Open the notebook `GIBots - Multilabel Classification.ipnyb`
 2. Ensure that the required Python libraries are installed (e.g., pandas, numpy, scikit-learn).
 3. Run through each of the cells.
 4. Review the output predictions generated in the output images below.
