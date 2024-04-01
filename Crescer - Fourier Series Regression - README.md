@@ -4,7 +4,7 @@ This repository contains a Python script for performing Fourier Series Regressio
 
 Overview:
 
-- `fourier_regression.py`: Python script that reads the dataset, performs Fourier Series Regression, trains a linear regression model, evaluates model performance, and makes predictions for a new data point.
+- `Crescer - Fourier Series Regression.ipynb`: Python notebook that reads the dataset, performs Fourier Series Regression, trains a linear regression model, evaluates model performance, and makes predictions for a new data point.
 
 Dependencies:
 
@@ -18,15 +18,15 @@ Instructions:
 
 1. Clone the repository to your local machine.
 
-2. Navigate to the code directory.
+2. Open the notebook `Crescer - Fourier Series Regression.ipynb`.
 
-3. Run the Python script 'python fourier_regression.py'
+3. Run through each cell in `Crescer - Fourier Series Regression.ipynb`
 
 4. View the output in the terminal, including the predicted value for `x=50`.
 
-5. Ensure that all dependencies are installed before running the script.
+5. Ensure that all dependencies are installed before running the notebook.
 
-6. The script is well-commented for clarity and understanding. 
+6. The notebook is well-commented for clarity and understanding. 
 
 Dataset:
 
