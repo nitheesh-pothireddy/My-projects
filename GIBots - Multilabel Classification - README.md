@@ -5,7 +5,7 @@ This repository contains Python code for performing multilabel classification us
 
 Folder Structure:
 - datasets: Contains the input data files (`train.csv`, `test.csv`, `trainLabels.csv`). They are present in the 'GIBots - Multilabel Classification files' branch of my repository for reference.
-- code: Contains the Python scripts for preprocessing data and implementing multilabel classification (`multilabel_classification.py`).
+- python notebook: contains code for the multilabel classification problem.
 - output: Will be shown below as images of the output.
 - README.md: Provides an overview of the repository and instructions for running the code.
 
