@@ -31,6 +31,7 @@ Instructions:
 Dataset:
 
 The dataset (`scr-dataset.csv`) contains two columns: `x` and `y`, representing the independent and dependent variables, respectively.
+It can be found in the Crescer dataset branch of the repository.
 
 Output:
 
