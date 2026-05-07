@@ -1,0 +1,35 @@
+name: ToolSmith CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "toolsmith/**"
+      - ".github/workflows/toolsmith-ci.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "toolsmith/**"
+      - ".github/workflows/toolsmith-ci.yml"
+
+defaults:
+  run:
+    working-directory: toolsmith
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install uv
+      - run: uv pip install --system -e ".[dev]"
+      - name: Lint
+        run: |
+          ruff check src tests
+          ruff format --check src tests
+      - name: Tests
+        run: pytest --no-cov

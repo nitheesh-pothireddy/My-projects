@@ -1,0 +1,62 @@
+[
+  {
+    "id": "small-model-reasoning",
+    "question": "What's the state of small-model reasoning in 2025-2026?",
+    "reference_survey_url": "https://arxiv.org/abs/2501.00000",
+    "reference_main_claims": [
+      "Distillation from larger reasoning models is the dominant transfer technique.",
+      "Chain-of-thought fine-tuning materially improves <7B model accuracy on MATH.",
+      "Process-reward models outperform outcome-reward models on multi-step problems.",
+      "Self-consistency at inference time is cheaper than larger model swaps for many tasks.",
+      "Open-source small models still trail frontier closed models on hardest reasoning benchmarks."
+    ]
+  },
+  {
+    "id": "vision-transformers-post-2023",
+    "question": "How have vision transformers evolved since 2023?",
+    "reference_survey_url": "https://arxiv.org/abs/2401.00000",
+    "reference_main_claims": [
+      "Hybrid conv-attention architectures remain competitive on ImageNet at lower FLOPs.",
+      "Register tokens reduce attention-map artefacts and improve dense prediction.",
+      "MoE vision transformers scale parameters without proportional inference cost.",
+      "Better pretraining data outweighs architectural tweaks for many downstream tasks.",
+      "DINOv2-style self-supervision is now the default for representation learning."
+    ]
+  },
+  {
+    "id": "rlhf-alternatives",
+    "question": "What alternatives to RLHF are competitive in 2026?",
+    "reference_survey_url": "https://arxiv.org/abs/2403.00000",
+    "reference_main_claims": [
+      "DPO offers comparable alignment quality with simpler training than PPO-based RLHF.",
+      "KTO removes the need for paired preference data using a Kahneman-Tversky objective.",
+      "ORPO unifies SFT and preference optimisation in a single stage.",
+      "GRPO scales to reasoning tasks where outcome rewards exist.",
+      "Online iterative DPO closes the gap with online RL on harder benchmarks."
+    ]
+  },
+  {
+    "id": "long-context-attention",
+    "question": "What attention variants have proven effective for long-context (128k+) language models?",
+    "reference_survey_url": "https://arxiv.org/abs/2402.00000",
+    "reference_main_claims": [
+      "Ring + flash attention enables exact long-context training without cubic memory.",
+      "Sliding-window attention with sinks preserves throughput at high context lengths.",
+      "Position-interpolation methods (YaRN, NTK-aware) extend pretrained models cheaply.",
+      "State-space hybrids (Mamba, Jamba) trade some quality for substantially lower latency.",
+      "Retrieval-augmented inference still beats pure long-context for most QA workloads."
+    ]
+  },
+  {
+    "id": "diffusion-for-code",
+    "question": "How effective are diffusion-based models for code generation compared with autoregressive models?",
+    "reference_survey_url": "https://arxiv.org/abs/2404.00000",
+    "reference_main_claims": [
+      "Diffusion code models can edit anywhere in a file, not just append, enabling fill-in-middle naturally.",
+      "Diffusion models trade some pass@1 quality for stronger pass@k due to multi-sample diversity.",
+      "Inference latency is currently 2-4x worse than autoregressive code models of similar size.",
+      "Hybrid AR+diffusion approaches show promise for refactoring tasks.",
+      "Tooling and ecosystem maturity still favour autoregressive code models in practice."
+    ]
+  }
+]
