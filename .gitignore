@@ -1,0 +1,40 @@
+# Top-level patterns. Subprojects keep their own .gitignore for project-specific paths.
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual envs
+.venv/
+venv/
+.env
+
+# Caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# IDEs / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Project artefacts (any subproject)
+data/
+outputs/
+chroma_db/
+wandb/
+*.safetensors
+*.bin

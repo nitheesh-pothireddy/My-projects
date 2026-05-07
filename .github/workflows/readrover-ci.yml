@@ -1,0 +1,56 @@
+name: ReadRover CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "readrover/**"
+      - ".github/workflows/readrover-ci.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "readrover/**"
+      - ".github/workflows/readrover-ci.yml"
+
+defaults:
+  run:
+    working-directory: readrover
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install package
+        run: uv pip install --system -e ".[dev]"
+
+      - name: Lint with ruff
+        run: |
+          ruff check src tests
+          ruff format --check src tests
+
+      - name: Type-check with mypy
+        run: mypy src
+        continue-on-error: true
+
+      - name: Run tests
+        run: pytest --no-cov
+
+      - name: Build distributions
+        run: |
+          pip install build
+          python -m build
